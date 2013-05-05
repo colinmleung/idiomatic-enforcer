@@ -1,0 +1,14 @@
+{
+  "name": "idiomatic-enforcer",
+  "description": "Enforces idiomatic.js rules",
+  "version": "0.0.1",
+  "author": "Colin Leung <colinmleung@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "commander": "*"
+  },
+  "bin": { "idiomatic-enforcer": "./bin/idiomatic-enforcer" }
+}

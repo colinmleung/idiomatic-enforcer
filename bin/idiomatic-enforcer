@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+ 
+ var program = require('commander'),
+     fs = require('fs');
+
+// CLI
+
+program
+    .version('0.0.1')
+    .usage('[options] [dir]')
+    .parse(process.argv);
+    
+fs.readFile(process.argv[2], 'utf-8', function(err, data) {
+    if (err) {
+        console.log(err);
+    }
+    console.log(data);
+});
